@@ -302,3 +302,12 @@
         }
     }
 }
+#filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+        display: flex;
+        justify-self: center;
+        gap: 1rem;
+    }
+}
