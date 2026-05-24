@@ -1,5 +1,20 @@
 <%- include('../partials/header') %>
-
+<% 
+    const monthLabels = {
+        1: 'Jan',
+        2: 'Feb',
+        3: 'Mar',
+        4: 'Apr',
+        5: 'May',
+        6: 'Jun',
+        7: 'Jul',
+        8: 'Aug',
+        9: 'Sep',
+        10: 'Oct',
+        11: 'Nov',
+        12: 'Dec'
+    };
+%>
 <article class="route-detail">
     <div class="route-header">
         <div class="route-header-content">
@@ -63,7 +78,7 @@
             <h2>Operating Schedule</h2>
             <div class="months-grid">
                 <% details.operatingMonths.forEach(function(month) { %>
-                <span class="month-badge"><%= month %></span>
+                <span class="month-badge"><%= monthLabels[month] %></span>
                 <% }); %>
             </div>
         </div>
